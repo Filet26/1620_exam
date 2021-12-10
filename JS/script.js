@@ -8,3 +8,22 @@ togBtn.addEventListener('click', ()=> {
     dark_mode()
 })
 
+
+function addData(e) {
+    e.preventDefault()
+    let data_items = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('msg').value
+    }
+    console.log(data_items)
+}
+
+
+
+const btn = document.getElementById('frm-btn')
+btn.addEventListener('click', (e)=>{
+    e.preventDefault()
+    addData(e)
+
+})
