@@ -1,14 +1,14 @@
 :root {
-  --navHeight:   80px;
-  --yellow:      #F9C74F;
-  --lightCoral:  #EF6E6B;
-  --apricot:     #FFD6BA;
-  --lightGreen:  #BEE3DB;
-  --darkGreen:   #527A78;
-  --white:       #FAF9F9;
-  --black:       #23262E;
-  --blueGray:    #555B6E;
-  --romanSilver: #757E95;
+  --navHeight: 80px;
+  --yellow: #f9c74f;
+  --lightCoral: #ef6e6b;
+  --apricot: #ffd6ba;
+  --lightGreen: #bee3db;
+  --darkGreen: #527a78;
+  --white: #faf9f9;
+  --black: #23262e;
+  --blueGray: #555b6e;
+  --romanSilver: #757e95;
 }
 
 * {
@@ -20,13 +20,23 @@
 
 /* notice how the default light theme colors are set by this class. */
 .light-theme {
-  --navBg:          var(--lightGreen);
+  --navBg: var(--lightGreen);
   --navLinkHoverBg: var(--white);
-  --mainBg:         var(--white);
-  --fontColor:      var(--black);
-  --navLinkColor:   var(--lightCoral);
-  --formBG:         var(--lightCoral);
-  --formInput:      var(--white);
+  --mainBg: var(--white);
+  --fontColor: var(--black);
+  --navLinkColor: var(--lightCoral);
+  --formBG: var(--lightCoral);
+  --formInput: var(--romanSilver);
+}
+
+.dark-theme {
+  --navBg: var(--darkGreen);
+  --navLinkHoverBg: var(--white);
+  --mainBg: var(--black);
+  --fontColor: var(--white);
+  --navLinkColor: var(--yellow);
+  --formBG: var(--blueGray);
+  --formInput: var(--white);
 }
 
 /* toggle styles begin */
@@ -122,7 +132,8 @@ section {
   height: calc(100vh - var(--navHeight));
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: Poppins, sans-serif;
   color: var(--fontColor);
 }
@@ -155,22 +166,22 @@ label {
 }
 
 .message > textarea {
- flex: 1; 
- min-width: 45rem;
- font-size: 1.8rem;
+  flex: 1;
+  min-width: 45rem;
+  font-size: 1.8rem;
 }
 
 .contact {
-  flex: 1; 
+  flex: 1;
   order: 1;
-  margin-right: 2em; 
+  margin-right: 2em;
 }
 
 .contact input {
   width: 100%;
 }
 
-input[type=text]:focus {
+input[type="text"]:focus {
   border: none;
   outline: none;
 }
@@ -184,6 +195,6 @@ input[type=text]:focus {
 }
 
 .contact button {
- background: var(--darkGreen);
- color: var(--white);
+  background: var(--darkGreen);
+  color: var(--white);
 }
