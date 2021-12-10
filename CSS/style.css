@@ -198,3 +198,25 @@ input[type="text"]:focus {
   background: var(--darkGreen);
   color: var(--white);
 }
+
+@media (max-width: 600px) {
+  .myForm {
+    flex-direction: column;
+    width: 50rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+    margin: 1rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .contact {
+    order: 2;
+  }
+}
