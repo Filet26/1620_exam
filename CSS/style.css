@@ -28,7 +28,7 @@
   --formBG: var(--lightCoral);
   --formInput: var(--romanSilver);
 }
-
+/* dark theme mode, everything turns cool and dark when this theme is applied */
 .dark-theme {
   --navBg: var(--darkGreen);
   --navLinkHoverBg: var(--white);
@@ -100,6 +100,7 @@ nav ul {
   padding: 0 10px;
 }
 
+/* wut happen here */
 nav ul li {
   padding: 12px 10px;
   cursor: pointer;
@@ -202,11 +203,12 @@ input[type="text"]:focus {
 /* media suff */
 
 @media (max-width: 600px) {
+  /* make form direction 1 column */
   .myForm {
     flex-direction: column;
     width: 50rem;
   }
-
+  /* aligned text and made font smaller */
   h1 {
     text-align: center;
     font-size: 5rem;
@@ -219,8 +221,10 @@ input[type="text"]:focus {
     margin: 1rem;
     padding: 1rem;
   }
-
+  /* order da stuff */
   .contact {
     order: 2;
   }
 }
+
+/* it was a pleasure to be in your class, I learned a lot : ) */
